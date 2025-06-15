@@ -1,5 +1,5 @@
 <?php
-// curl -gki "http://localhost:8000/20_sqli_interpolation.php?username=admin&password=adminpass"
+// curl -gki "http://localhost:8000/13_sqli_interpolation.php?username=admin&password=adminpass"
 
 $db = new PDO('sqlite::memory:');
 $db->exec('CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT, password TEXT)');

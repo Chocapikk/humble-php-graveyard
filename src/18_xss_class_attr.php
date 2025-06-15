@@ -1,5 +1,5 @@
 <?php
-// curl -gki "http://localhost:8000/24_xss_class_attr.php?class=redbold"
+// curl -gki "http://localhost:8000/18_xss_class_attr.php?class=redbold"
 
 $custom_class = $_GET['class'] ?? '';
 $custom_class = preg_replace('/[<>"' . "'" . '\\/]/', '', $custom_class); // naive filter

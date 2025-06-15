@@ -1,5 +1,5 @@
 <?php
-// curl -gki "http://localhost:8000/25_file_upload.php" -F "file=@src/osk.png;filename=osk.png"
+// curl -gki "http://localhost:8000/24_file_upload.php" -F "file=@src/osk.png;filename=osk.png"
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
     $filename = $_FILES['file']['name'];

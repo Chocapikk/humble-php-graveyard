@@ -1,5 +1,5 @@
 <?php
-// curl -gki "http://localhost:8000/21_xss_json_dump_js.php?id=01&data=henlo"
+// curl -gki "http://localhost:8000/17_xss_json_dump_js.php?id=01&data=henlo"
 
 header('Content-Type: text/html');
 $id = $_GET['id'] ?? '00';

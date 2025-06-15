@@ -1,5 +1,5 @@
 <?php 
-// curl -gki "http://localhost:8000/1_file_read.php?file=osk.png"
+// curl -gki "http://localhost:8000/01_file_read.php?file=osk.png"
 
 $filename=$_GET['file']??'';
 if ($filename){

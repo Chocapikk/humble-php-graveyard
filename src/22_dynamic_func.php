@@ -1,5 +1,5 @@
 <?php 
-// curl -gki "http://localhost:8000/15_dynamic_func.php?func=makeItPretty&arg=cats"
+// curl -gki "http://localhost:8000/22_dynamic_func.php?func=makeItPretty&arg=cats"
 
 function makeItPretty($data) {
     return "*** " . $data . " ***";

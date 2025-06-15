@@ -1,5 +1,5 @@
 <?php 
-// curl -gki "http://localhost:8000/12_replace_bug.php?url=http://127.0.0.1/"
+// curl -gki "http://localhost:8000/19_replace_bug.php?url=http://127.0.0.1:8001/"
 
 $url = $_GET['url'] ?? '';
 

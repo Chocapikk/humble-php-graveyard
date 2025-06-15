@@ -1,5 +1,5 @@
 <?php 
-// curl -gki "http://localhost:8000/4_hard_cmd.php?arg=+.."
+// curl -gki "http://localhost:8000/04_hard_cmd.php?arg=+.."
 
 function safe_exec($arg){
     $descriptor = [

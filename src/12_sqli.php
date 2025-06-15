@@ -1,5 +1,5 @@
 <?php 
-// curl -gki "http://localhost:8000/10_sqli.php?user=admin&password=secret"
+// curl -gki "http://localhost:8000/12_sqli.php?user=admin&password=secret"
 
 $db  = new PDO('sqlite::memory:');
 $db->exec("CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT, password TEXT)");
