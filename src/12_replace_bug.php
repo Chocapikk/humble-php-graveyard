@@ -1,13 +1,20 @@
-<?php
-// URL: 12_replace_bug.php?url=file://file://etc/passwd
+<?php 
+// curl -gki "http://localhost:8000/12_replace_bug.php?url=http://127.0.0.1/"
+
 $url = $_GET['url'] ?? '';
 
 if (strpos($url, 'file://') !== false) {
-    // Attempt to block file:// but only replaces once
-    $url = str_replace('file://', '', $url); // NOT recursive!
+    $url = str_replace('file://', '', $url);
+}
+
+if (str_starts_with($url, '/')) {
+    die("no abs file!");
+}
+if (str_starts_with($url, '.')) {
+    return die("no path trav!");
 }
 
 echo "Trying to open: $url<br>";
 
-$content = @file_get_contents($url);
+$content = file_get_contents($url);
 echo "<pre>" . htmlspecialchars($content) . "</pre>";

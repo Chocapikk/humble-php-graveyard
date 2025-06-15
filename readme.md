@@ -15,3 +15,12 @@ sudo docker exec -it php-graveyard bash -il
 ```
 
 ```
+
+## TODOs
+
+- sqli prepared statement too late
+- reflect script tag in front
+- json blob with html mime
+- filter then unfiltered use
+- race condition file upload
+- xss a tag attrib

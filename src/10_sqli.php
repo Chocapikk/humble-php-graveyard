@@ -1,13 +1,15 @@
 <?php 
-// URL : 10_sqli.php?user=admin' OR '1'='1
+// curl -gki "http://localhost:8000/10_sqli.php?user=admin&password=secret"
+
 $db  = new PDO('sqlite::memory:');
 $db->exec("CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT, password TEXT)");
-$db->exec("INSERT INTO users (username, password) VALUES ('admin', 'secret')");
+$db->exec("INSERT INTO users (username, password) VALUES ('admin', '5ebe2294ecd0e0f08eab7690d2a6ee69')");
 
 $user = $_GET['user'] ?? '';
-$query = "SELECT * FROM users WHERE username = '$user'";
+$password = md5($_GET['password'] ?? '');
+$query = "SELECT * FROM users WHERE username = '$user' AND password='$password'";
 echo "<pre>Query: $query</pre>";
 
 foreach ($db->query($query) as $row) {
-    echo "<pre>User:".htmlspecialchars($row['username']). " - ". htmlspecialchars($row['password']) . "</pre>";
+    echo "\n<pre>Welcome back, ".htmlspecialchars($row['username']). "!</pre>";
 }

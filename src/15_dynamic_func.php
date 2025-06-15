@@ -1,5 +1,9 @@
-<?php
-// URL : dynamic_func.php?func=system&arg=whoami 
+<?php 
+// curl -gki "http://localhost:8000/15_dynamic_func.php?func=makeItPretty&arg=cats"
+
+function makeItPretty($data) {
+    return "*** " . $data . " ***";
+}
 
 $func = $_GET['func'] ?? '';
 $arg = $_GET['arg'] ?? '';

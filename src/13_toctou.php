@@ -1,10 +1,11 @@
-<?php
-// URL : 13_toctou.php?url=http://127.0.0.1/resource 
-$url = $_GET['url'] ?? '';
+<?php 
+// curl -gki "http://localhost:8000/13_toctou.php?url=http://127.0.0.1/resource"
 
+$url = $_GET['url'] ?? '';
 
 function is_allowed($url){
     $parsed = parse_url($url);
+    echo var_dump("parsed", $parsed);
     if (!$parsed){
         return false;
     }
@@ -12,7 +13,6 @@ function is_allowed($url){
 }
 
 if ($url && is_allowed($url)) {
-    // Attempt to block file:// but only replaces once
     echo "Fetching: $url<br>";
     $data = file_get_contents($url);
     echo "<pre>" . htmlspecialchars($data) . "</pre>";

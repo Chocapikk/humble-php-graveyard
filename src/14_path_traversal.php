@@ -1,5 +1,6 @@
 <?php 
-// URL: 14_path_traversal.php?file=..%2F..%2Fetc%2Fpasswd
+// curl -gki "http://localhost:8000/14_path_traversal.php?file=osk.png"
+
 $file=$_GET['file'] ?? '';
 if (strpos($file,'../')!== false){
   die("Path traversal detected");

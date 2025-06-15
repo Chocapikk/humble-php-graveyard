@@ -1,6 +1,5 @@
-<?php
-
-//URL : 7_hardv2_cmd.php?debug=1&action=ping&host=127.0.0.1`sleep 5`
+<?php 
+// curl -gki 'http://localhost:8000/7_hardv2_cmd.php?debug=1&action=ping&host=127.0.0.1'
 
 $debug=isset($_GET['debug'])? (bool)$_GET['debug']:false;
 $allowed_actions = ['ping', 'traceroute'];

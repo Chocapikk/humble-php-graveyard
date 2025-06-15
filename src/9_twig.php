@@ -1,13 +1,11 @@
-<?php
-// URL: 9_twig.php?tpl={{`id`}}
-// Simulated Twig-like parser with dangerous eval()
+<?php 
+// curl -gki 'http://localhost:8000/9_twig.php?tpl={{$name}}'
 
 $tpl = $_GET['tpl'] ?? '{{name}}';
 $data = ['name' => 'Guest'];
 
 // Fake "rendering" logic
-$template = preg_replace_callback('/{{(.*?)}}/', function ($m) use ($data) {
-    // No escaping or sandboxing — dangerous!
+$template = preg_replace_callback('/{{(\$.*?)}}/', function ($m) use ($data) {
     extract($data);
     return eval("return {$m[1]};");
 }, $tpl);
