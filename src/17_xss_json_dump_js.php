@@ -18,4 +18,4 @@ var data = "<?php echo $data; ?>";
 console.log(data1);
 console.log(data);
 </script>
-</body></html> 
+</body></html>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 // curl -gki "http://localhost:8000/02_ssrf.php?url=http://127.0.0.1:8001"
 
 $url = $_GET['url'] ?? '' ;

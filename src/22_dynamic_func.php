@@ -1,4 +1,4 @@
-<?php 
+<?php
 // curl -gki "http://localhost:8000/22_dynamic_func.php?func=makeItPretty&arg=cats"
 
 function makeItPretty($data) {

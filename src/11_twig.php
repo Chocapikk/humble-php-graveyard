@@ -1,4 +1,4 @@
-<?php 
+<?php
 // curl -gki 'http://localhost:8000/11_twig.php?tpl={{$name}}'
 
 $tpl = $_GET['tpl'] ?? '{{name}}';

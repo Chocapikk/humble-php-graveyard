@@ -18,4 +18,4 @@ if ($user) {
     echo "Welcome, " . htmlspecialchars($user['username']);
 } else {
     echo "Invalid credentials.";
-} 
+}

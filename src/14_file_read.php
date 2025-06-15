@@ -1,4 +1,4 @@
-<?php 
+<?php
 // curl -gki "http://localhost:8000/14_file_read.php?file=osk.png"
 
 $filename=$_GET['file']??'';

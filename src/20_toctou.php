@@ -1,4 +1,4 @@
-<?php 
+<?php
 // curl -gki "http://localhost:8000/20_toctou.php?url=http://127.0.0.1:8001/resource"
 
 $url = $_GET['url'] ?? '';

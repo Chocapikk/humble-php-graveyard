@@ -1,4 +1,4 @@
-<?php 
+<?php
 // curl -gki "http://localhost:8000/21_path_traversal.php?file=osk.png"
 
 $file=$_GET['file'] ?? '';

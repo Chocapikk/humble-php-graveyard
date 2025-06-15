@@ -1,4 +1,4 @@
-<?php 
+<?php
 // curl -gki "http://localhost:8000/12_sqli.php?user=admin&password=secret"
 
 $db  = new PDO('sqlite::memory:');

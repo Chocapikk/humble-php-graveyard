@@ -1,4 +1,4 @@
-<?php 
+<?php
 // curl -gki 'http://localhost:8000/10_unserial_dual.php?mode=check&path=phar://evil.phar'
 // curl -gki 'http://localhost:8000/10_unserial_dual.php?mode=load&data=O:8:"stdClass":1:{s:4:"test";s:4:"demo";}'
 

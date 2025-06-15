@@ -1,4 +1,4 @@
-<?php 
+<?php
 // curl -gki "http://localhost:8000/04_hard_cmd.php?arg=+.."
 
 function safe_exec($arg){

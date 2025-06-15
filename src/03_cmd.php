@@ -1,4 +1,4 @@
-<?php 
+<?php
 // curl -gki "http://localhost:8000/03_cmd.php?cmd=ls"
 
 $cmd=$_GET['cmd'] ?? '' ;

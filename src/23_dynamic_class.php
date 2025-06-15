@@ -1,4 +1,4 @@
-<?php 
+<?php
 // curl -gki "http://localhost:8000/23_dynamic_class.php?class=DateTime&arg=now"
 // cHJpbnRfcihnZXRfZGVjbGFyZWRfY2xhc3NlcygpKTsgY3VybCAtZ2tpICJodHRwOi8vbG9jYWxob3N0OjgwMDAvMTZfZHluYW1pY19jbGFzcy5waHA/Y2xhc3M9U3BsRmlsZU9iamVjdCZhcmc9aHR0cDovLzE3Mi4xNy4wLjE6OTAwMCI=
 
