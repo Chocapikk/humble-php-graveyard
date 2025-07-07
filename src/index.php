@@ -13,6 +13,16 @@
             text-align: center;
             color: #444;
         }
+        h2 {
+            text-align: center;
+            color: #444;
+        }
+
+        h2 a {
+            text-decoration: none;
+            color: #16537e;
+            font-weight: bold;
+        }
         .grid {
             display: flex;
             flex-wrap: wrap;
@@ -50,6 +60,7 @@
 </head>
 <body>
     <h1>Humble php graveyard</h1>
+    <h2>By <a href="https://github.com/laluka">@TheLaluka</a></h2>
     <div class="grid">
         <?php
         $files = glob("*.php");
